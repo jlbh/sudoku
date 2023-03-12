@@ -24,7 +24,7 @@ class Puzzle:
             sqrs = set(self.board[np.where(self.squares == self.squares[loc])])
             self.options[loc] = set(np.arange(1,10)) - (cols | rows | sqrs)
 
-    def sureMove(self):
+    def sureMoves(self):
         for pos in np.argwhere(self.board == 0):
             loc = tuple(pos)
             if len(self.options[loc]) == 1:
@@ -35,7 +35,7 @@ def procedure():
     print(puzzle.board)
     while np.count_nonzero(puzzle.board==0) > 0:
         puzzle.getOptions()
-        puzzle.sureMove()
+        puzzle.sureMoves()
         print(".")
     print(puzzle.board)
 
