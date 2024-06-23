@@ -60,9 +60,7 @@ class Board:
         save[tuple(holder)] = choices[where].pop()
         self.array[tuple(holder)] = choices[where].pop()
         self.save.append(save)
-        return
     
     def solve(self):
         while np.count_nonzero(self.array == 0):
             self.move()
-        return
