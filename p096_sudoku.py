@@ -10,12 +10,12 @@ import time
 from sudoku import Board
 
 if __name__ == '__main__':
+    t0 = time.time()
     string_set = open("p096_sudoku.txt").read()
     puzzles = string_set.split('Grid')
     puzzles = [x[4:] for x in puzzles[1:]]
     total = 0
     
-    t0 = time.time()
     for puzzle in puzzles:
         b = Board(puzzle)
         b.solve()
