@@ -22,4 +22,4 @@ if __name__ == '__main__':
         total += b.array[0,2] + 10 * b.array[0,1] + 100 * b.array[0,0]
     print(total)
     t1 = time.time()
-    print(f'Time: {t1-t0}')
+    print(f'Time: {t1-t0} seconds.')
