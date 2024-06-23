@@ -13,6 +13,5 @@ def main():
     print(f'Puzzle:\n{b.array}')
     b.solve()
     print(f'Solution:\n{b.array}')
-    return
 
 if __name__ == '__main__': main()
