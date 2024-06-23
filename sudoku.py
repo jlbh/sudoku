@@ -48,9 +48,8 @@ class Board:
                     pass
                 if self.boxes[tuple(i)] == self.boxes[tuple(j)]:
                     count += 1
-                else: 
-                    if i[0] == j[0] or i[1] == j[1]:
-                        count +=1
+                elif i[0] == j[0] or i[1] == j[1]:
+                    count +=1
             if count >= record: 
                 holder = i
                 where = n
