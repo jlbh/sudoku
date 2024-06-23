@@ -15,4 +15,4 @@ if __name__ == '__main__':
     t0 = time.time()
     b.solve()
     t1 = time.time()
-    print(f'Solution:\n{b.array}\nTime: {t1-t0}')
+    print(f'Solution:\n{b.array}\nTime: {t1-t0} seconds.')
