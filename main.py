@@ -11,7 +11,9 @@ from sudoku import Board
 def main():
     b = Board(open("puzzle.txt").read())
     print(f'Puzzle:\n{b.array}')
+    t0 = time.time()
     b.solve()
-    print(f'Solution:\n{b.array}')
+    t1 = time.time()
+    print(f'Solution:\n{b.array}\nTime: {t1-t0}')
 
 if __name__ == '__main__': main()
