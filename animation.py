@@ -21,6 +21,6 @@ while np.count_nonzero(b.array == 0):
 
 anim = animation.ArtistAnimation(fig, frames, interval=7)
 
-writergif = animation.PillowWriter(fps=30)
+writergif = animation.PillowWriter(fps=10)
 anim.save('movie.gif', writer=writergif)
 plt.show()
